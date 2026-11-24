@@ -132,8 +132,8 @@ glitchguard/
 ### 1. Clone and Setup
 
 ```bash
-git clone https://github.com/YOUR_ORG/glitchguard.git
-cd glitchguard
+https://github.com/sarangchaudhari635-oss/GlitchGuard.git
+cd GlitchGuard
 ./scripts/setup.sh
 ```
 
