@@ -1,0 +1,12 @@
+[package]
+name = "event-engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GLITCHGUARD structured event processing, timestamping, and ring-buffer history"
+
+[dependencies]
+glitchguard-common = { path = "../common" }
+serde = { workspace = true, features = ["derive"] }
+heapless = { version = "0.8" }

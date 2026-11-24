@@ -1,0 +1,43 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "firmware/glitchguard-monitor",
+    "firmware/hardware-observer",
+    "firmware/event-engine",
+    "firmware/crypto-verification",
+    "firmware/recovery-engine",
+    "firmware/common",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["GLITCHGUARD Contributors"]
+license = "MIT"
+repository = "https://github.com/YOUR_ORG/glitchguard"
+
+# Workspace-level dependencies shared across crates
+[workspace.dependencies]
+# Serialization
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = "1.0"
+serde-json-core = "0.5"
+
+# Embedded / no_std support
+# Note: These are conditionally used; actual Xous crates are added per-crate
+# as they depend on the Xous IPC crate versions from xous-core.
+
+# Testing
+# (host-only test dependencies are in [dev-dependencies] per crate)
+
+# Profile: optimise for size in release (embedded target)
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+overflow-checks = true
+
+[profile.dev]
+overflow-checks = true

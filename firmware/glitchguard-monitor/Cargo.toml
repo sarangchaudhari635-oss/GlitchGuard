@@ -1,0 +1,25 @@
+[package]
+name = "glitchguard-monitor"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GLITCHGUARD main Xous monitoring service"
+
+[[bin]]
+name = "glitchguard-monitor"
+path = "src/main.rs"
+
+[dependencies]
+glitchguard-common = { path = "../common" }
+hardware-observer = { path = "../hardware-observer" }
+event-engine = { path = "../event-engine" }
+crypto-verification = { path = "../crypto-verification" }
+recovery-engine = { path = "../recovery-engine" }
+heapless = { version = "0.8" }
+serde-json-core = { version = "0.5" }
+
+# Note: Xous runtime crates (xous, xous-ipc, num-derive, num-traits) are added
+# here once the Xous SDK version is confirmed and the crates are available from
+# the official xous-core Cargo workspace.
+# Reference: https://github.com/betrusted-io/xous-core/Cargo.toml

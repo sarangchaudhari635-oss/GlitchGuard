@@ -1,0 +1,20 @@
+[package]
+name = "hardware-observer"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GLITCHGUARD hardware sensor interface and capability registry for Dabao/Baochip-1x"
+
+[dependencies]
+glitchguard-common = { path = "../common" }
+serde = { workspace = true, features = ["derive"] }
+heapless = { version = "0.8" }
+
+# Note: Xous-specific dependencies (xous, xous-ipc) are added here once the
+# Xous SDK version is confirmed from the official xous-core repository.
+# Do not add placeholder addresses or invented peripheral crates.
+# Reference: https://github.com/betrusted-io/xous-core
+
+[dev-dependencies]
+# Host-side tests use std

@@ -1,0 +1,11 @@
+[package]
+name = "recovery-engine"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GLITCHGUARD defensive finite-state-machine recovery engine"
+
+[dependencies]
+glitchguard-common = { path = "../common" }
+heapless = { version = "0.8" }

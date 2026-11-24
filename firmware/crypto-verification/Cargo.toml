@@ -1,0 +1,19 @@
+[package]
+name = "crypto-verification"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+description = "GLITCHGUARD cryptographic integrity verification — hardware-accelerated where available, software fallback otherwise"
+
+[dependencies]
+glitchguard-common = { path = "../common" }
+heapless = { version = "0.8" }
+
+# Software SHA-256 fallback (no_std compatible)
+sha2 = { version = "0.10", default-features = false }
+digest = { version = "0.10", default-features = false }
+
+# Note: Hardware-accelerated SHA will use the Xous engine service once
+# the interface is verified from xous-core/services/engine-25519/
+# Do NOT add hardware register addresses until verified from RTL.

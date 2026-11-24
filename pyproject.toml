@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "glitchguard-host"
+version = "0.1.0"
+description = "GlitchGuard host-side tools: FastAPI backend, serial communication, event parsers, and experiment exporters"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "GLITCHGUARD Contributors" }]
+
+dependencies = [
+    "fastapi>=0.100",
+    "uvicorn[standard]>=0.23",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "pyserial>=3.5",
+    "httpx>=0.24",          # async HTTP client for tests
+    "python-multipart>=0.0.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7",
+    "pytest-asyncio>=0.21",
+    "httpx>=0.24",
+    "ruff>=0.1",
+    "mypy>=1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["host-tools"]
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["host-tools/tests"]
