@@ -1,9 +1,11 @@
 # GLITCHGUARD — Project Status
 
 **Last Updated:** 2026-11-25  
-**Current Phase:** PHASE 9 COMPLETE (Autonomous Live Hardware Integration, End-to-End Testing & Operational Validation)  
-**Overall Status:** PRODUCTION READY & HARDWARE VERIFIED  
-**Physical Hardware Status:** HARDWARE_VERIFIED (Baochip-1x Stepping A0 live on COM10 / COM9)
+**Current Phase:** PHASE 9 COMPLETE — DEPLOYED TO PRODUCTION  
+**Overall Status:** DEPLOYED & HARDWARE VERIFIED  
+**Physical Hardware Status:** HARDWARE_VERIFIED (Baochip-1x Stepping A0 live on COM10 / COM9)  
+**Cloud Deployment:** https://glitchguard-production.up.railway.app  
+**GitHub Repository:** https://github.com/sarangchaudhari635-oss/GlitchGuard
 
 ---
 
@@ -45,3 +47,4 @@
 | **Sustained Soak Test** | **VERIFIED** | 200/200 msgs, 50.0 ms mean, 0.25 ms jitter, 0 leak (`soak_test_report.json`) |
 | **Launcher Scripts** | **TESTED** | PowerShell (`.ps1`) & Bash (`.sh`) unified start/stop scripts |
 | **Technical Documentation** | **COMPLETE** | 10 comprehensive reports and guides in `docs/` |
+| **Cloud Deployment** | **DEPLOYED** | Railway production — https://glitchguard-production.up.railway.app |

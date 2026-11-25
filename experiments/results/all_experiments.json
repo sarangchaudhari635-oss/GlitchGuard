@@ -1,0 +1,2262 @@
+[
+  {
+    "schema_version": "1.0",
+    "event_id": "23c37fb7-9b09-479a-b4cc-ea6d2d86004f",
+    "timestamp_ns": 1795545573448719104,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "iteration": 1,
+      "detection_latency_us": 3.0,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7a33bf19-55d1-41d1-98b1-28a917674038",
+    "timestamp_ns": 1795545573448770048,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000001",
+      "iteration": 2,
+      "detection_latency_us": 1.1,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "55cc026e-b8ef-4ab1-a6d4-8a30689cba78",
+    "timestamp_ns": 1795545573448784128,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000002",
+      "iteration": 3,
+      "detection_latency_us": 0.6,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "8b7e9912-b215-4fae-829d-91923b2685e5",
+    "timestamp_ns": 1795545573448795136,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000003",
+      "iteration": 4,
+      "detection_latency_us": 0.6,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "31496fe2-6709-4099-818f-8f1e1dc70577",
+    "timestamp_ns": 1795545573448805120,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000004",
+      "iteration": 5,
+      "detection_latency_us": 0.5,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "0824d8fc-cbc4-4c57-8c37-48a1d9a98cb8",
+    "timestamp_ns": 1795545573448813824,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000005",
+      "iteration": 6,
+      "detection_latency_us": 0.5,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "e0fbd285-05fd-4533-9ce8-9975c1a050e4",
+    "timestamp_ns": 1795545573448820992,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000006",
+      "iteration": 7,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d8addc4f-cb16-48e8-87b8-2a86589ea397",
+    "timestamp_ns": 1795545573448837120,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000007",
+      "iteration": 8,
+      "detection_latency_us": 0.5,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "9847e99e-f2bd-4d49-b5fe-2ed4b83e4aca",
+    "timestamp_ns": 1795545573448847104,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000008",
+      "iteration": 9,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7357c132-e42f-4f92-92dd-1bb50cbccc04",
+    "timestamp_ns": 1795545573448855040,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000009",
+      "iteration": 10,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "67f6c4f3-f8f2-4c11-8767-be8003af9dbd",
+    "timestamp_ns": 1795545573448864000,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000a",
+      "iteration": 11,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "9f045eb1-068f-4f6f-999b-2c303653d90b",
+    "timestamp_ns": 1795545573448872192,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000b",
+      "iteration": 12,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "603caf84-0f29-4583-8401-275191900e75",
+    "timestamp_ns": 1795545573448879104,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000c",
+      "iteration": 13,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "6fe1f612-1346-4e13-a691-a60939f0d42b",
+    "timestamp_ns": 1795545573448888064,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000d",
+      "iteration": 14,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "cdb789b4-b928-4f91-8b07-76089255e781",
+    "timestamp_ns": 1795545573448896000,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000e",
+      "iteration": 15,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "bf94bf17-763e-4e1c-b01a-c2ca7c08f38d",
+    "timestamp_ns": 1795545573448903168,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:000000000000000000000000000000000000000000000000000000000000000f",
+      "iteration": 16,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7410cadf-c65e-46a2-8a7c-1c3dd60f0297",
+    "timestamp_ns": 1795545573448911872,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000010",
+      "iteration": 17,
+      "detection_latency_us": 1.5,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "2f6c0903-14d1-4af0-bcc5-c2294ece6187",
+    "timestamp_ns": 1795545573448921088,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000011",
+      "iteration": 18,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "25ce44d0-97c1-4f24-bd94-71256f07dbb8",
+    "timestamp_ns": 1795545573448931072,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000012",
+      "iteration": 19,
+      "detection_latency_us": 0.4,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "3e7d7a95-0f9b-4e63-8390-54e6b4415342",
+    "timestamp_ns": 1795545573448937984,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "HIGH",
+    "experiment_id": "EXP-A-INTEGRITY-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "expected_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000013",
+      "iteration": 20,
+      "detection_latency_us": 0.3,
+      "algorithm": "SHA-256",
+      "hardware_accelerated": false,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "53d837a4-637d-465d-88fd-3084a57957d4",
+    "timestamp_ns": 1795545573449103104,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 620,
+      "iteration": 1,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "6e813a17-287b-480b-b29b-27004ac7b41f",
+    "timestamp_ns": 1795545573449125120,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 625,
+      "iteration": 2,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "e75eb334-90cf-42dd-b981-803e8b5668df",
+    "timestamp_ns": 1795545573449136896,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 630,
+      "iteration": 3,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "c1549022-8890-40af-8e60-ee4062ed60e4",
+    "timestamp_ns": 1795545573449146112,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 635,
+      "iteration": 4,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "2af5a451-a677-4c51-b95e-6aeea2a62b46",
+    "timestamp_ns": 1795545573449153792,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 640,
+      "iteration": 5,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f8782355-2b7f-4ade-a687-a998b61c3ac5",
+    "timestamp_ns": 1795545573449166080,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 645,
+      "iteration": 6,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "58cfbd27-2bb6-4d6b-a1a3-cf067e3feca7",
+    "timestamp_ns": 1795545573449174016,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 650,
+      "iteration": 7,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f92e18e7-a6fb-4ed9-93ad-f8ea611879b5",
+    "timestamp_ns": 1795545573449181184,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 655,
+      "iteration": 8,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "3ba5e019-db07-4b10-9c8a-772e424b9c4e",
+    "timestamp_ns": 1795545573449189888,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 660,
+      "iteration": 9,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a3abfe16-084f-445f-8fae-78b15aa9aedc",
+    "timestamp_ns": 1795545573449196032,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 665,
+      "iteration": 10,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "e4e6f567-252e-422a-965d-a4308071ca2b",
+    "timestamp_ns": 1795545573449202944,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 670,
+      "iteration": 11,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "10dcc587-16a0-4e89-8235-194355f56526",
+    "timestamp_ns": 1795545573449209088,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 675,
+      "iteration": 12,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7f03975e-09b5-4adf-8740-6da0f780a8bf",
+    "timestamp_ns": 1795545573449216000,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 680,
+      "iteration": 13,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f48b2911-8d24-4992-8776-d4d833ae924f",
+    "timestamp_ns": 1795545573449223936,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 685,
+      "iteration": 14,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a7933408-e9cf-42ee-9f9f-8646d6875ba8",
+    "timestamp_ns": 1795545573449232128,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 690,
+      "iteration": 15,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "cabbaa33-914a-43c5-9806-66b4643a7ac0",
+    "timestamp_ns": 1795545573449239040,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 695,
+      "iteration": 16,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ad6bf13f-74de-4e59-81db-5d6b3a5b0887",
+    "timestamp_ns": 1795545573449245952,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 700,
+      "iteration": 17,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a155d74c-dfb6-45ed-b931-2587a0fca413",
+    "timestamp_ns": 1795545573449251840,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 705,
+      "iteration": 18,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "aff44cf0-8377-4e71-b032-5ceff4cc7105",
+    "timestamp_ns": 1795545573449260032,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 710,
+      "iteration": 19,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "8eaead79-f96e-458c-87e4-b8c8ea54eb66",
+    "timestamp_ns": 1795545573449265920,
+    "source": "software_simulator",
+    "event_type": "HEARTBEAT_TIMEOUT",
+    "severity": "HIGH",
+    "experiment_id": "EXP-B-HEARTBEAT-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "subsystem": "crypto-worker-0",
+      "threshold_ms": 500,
+      "elapsed_ms": 715,
+      "iteration": 20,
+      "simulation": true
+    },
+    "verification_status": "ERROR",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "72ceae00-b149-4f39-809c-a8912b247644",
+    "timestamp_ns": 1795545573449385984,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 1,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "5d97efb8-adcd-4a6d-9b92-a04acd3b3a9f",
+    "timestamp_ns": 1795545573449406976,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 1,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "4059e5dc-5c0b-4b57-a1bc-2f73b774d38b",
+    "timestamp_ns": 1795545573449415936,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 2,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "2830510c-0964-457f-9e73-45ed8511158f",
+    "timestamp_ns": 1795545573449427968,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 2,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "64493856-2443-4d3c-a87b-323ec137d043",
+    "timestamp_ns": 1795545573449435904,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 3,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "65446802-da22-4c0a-bfc4-31c084e34fb6",
+    "timestamp_ns": 1795545573449444096,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 3,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7d05fa3d-2d47-4d0a-bb7b-2c291ec5ffda",
+    "timestamp_ns": 1795545573449453056,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 4,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "39fb03e2-f4f8-4811-a598-a14ddb887dff",
+    "timestamp_ns": 1795545573449459200,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 4,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "e0056e20-c62c-45f7-b2c9-ec1fb71e14d5",
+    "timestamp_ns": 1795545573449466112,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 5,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "9314bd77-b345-4163-a2ee-fe4ae00d9e91",
+    "timestamp_ns": 1795545573449476096,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 5,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d36afe71-0eeb-4f1a-96a8-ca0af6768993",
+    "timestamp_ns": 1795545573449483008,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 6,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b084b72c-e92d-4676-8230-7e31b1ca2d4e",
+    "timestamp_ns": 1795545573449489152,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 6,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b0a24182-2c68-41bc-b58b-ae2be71b00c1",
+    "timestamp_ns": 1795545573449495040,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 7,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ef290317-8e26-4b9a-8a21-cd9dc4aa04ce",
+    "timestamp_ns": 1795545573449501952,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 7,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "46078cb7-ec87-4cbd-9d11-9de54b4a4e28",
+    "timestamp_ns": 1795545573449508864,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 8,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "156f2fbd-8530-47b6-86b6-dd60d14c9d76",
+    "timestamp_ns": 1795545573449517056,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 8,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "31132027-d5d5-4273-a084-76f41dd64eed",
+    "timestamp_ns": 1795545573449524992,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 9,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "8c87e630-6b3a-48ec-9b0c-285e8fb4c5e4",
+    "timestamp_ns": 1795545573449531136,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 9,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7dde7884-f8b9-4ad4-b671-5b7e03137ac8",
+    "timestamp_ns": 1795545573449541120,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 10,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ecd39ffe-aa16-45d6-807a-2e3ec1536537",
+    "timestamp_ns": 1795545573449547008,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 10,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "21f52d67-73d7-457c-8c5d-e284194a5165",
+    "timestamp_ns": 1795545573449553920,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 11,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ca9c9878-4f99-4e6d-aeac-fc0b0d6f7221",
+    "timestamp_ns": 1795545573449563136,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 11,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f3651e1e-f104-48ed-acb8-24ac686d0c9a",
+    "timestamp_ns": 1795545573449570048,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 12,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "6931a424-86ce-440f-8f9b-6c5cbfbe1d07",
+    "timestamp_ns": 1795545573449577216,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 12,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f861702c-07a6-4e7a-bc95-0676b6006d18",
+    "timestamp_ns": 1795545573449584128,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 13,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a212c592-2251-48a4-b039-faff867abad4",
+    "timestamp_ns": 1795545573449588992,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 13,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "c78c5d38-a62e-4f58-b3f6-cb99843216fc",
+    "timestamp_ns": 1795545573449595904,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 14,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "069ce7e7-24a6-4ef9-b9b6-e892d646722b",
+    "timestamp_ns": 1795545573449601792,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 14,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "615680d0-bd03-467b-a120-82111d2f90ee",
+    "timestamp_ns": 1795545573449609984,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 15,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7533133a-5cce-4f23-94cf-337541ecb658",
+    "timestamp_ns": 1795545573449615872,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 15,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "bfe0b60b-fd02-4f92-9574-413b107b5d21",
+    "timestamp_ns": 1795545573449622016,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 16,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d07c9596-fa6f-44e5-a789-7f7ac0e9ad1a",
+    "timestamp_ns": 1795545573449628160,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 16,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "267caa0f-5cb6-4875-b18b-b74aa66ce71b",
+    "timestamp_ns": 1795545573449636096,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 17,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f5afa480-15e6-49f7-8211-4db56b74807e",
+    "timestamp_ns": 1795545573449641984,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 17,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f32277b7-1ceb-40b8-8f1d-21d3f8eace5c",
+    "timestamp_ns": 1795545573449647872,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 18,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "eb8364ba-3325-4d3f-bf09-44de33678e18",
+    "timestamp_ns": 1795545573449654016,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 18,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "30b4224e-2aba-4e1d-999c-fdd2126ff0f2",
+    "timestamp_ns": 1795545573449660928,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 19,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d6b3a1d2-ff22-4487-b5ab-540fc7f25cbb",
+    "timestamp_ns": 1795545573449668864,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 19,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d18df33d-e589-4456-ad16-c57fa0e44488",
+    "timestamp_ns": 1795545573449677056,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-C-INTERRUPT-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "interrupted_stage": "STAGE_ATTESTATION_CHECK",
+      "process_id": 4,
+      "iteration": 20,
+      "simulation": true
+    },
+    "verification_status": "PENDING",
+    "response": "VERIFYING"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ddc15c62-f177-4540-bc8f-edf98220f239",
+    "timestamp_ns": 1795545573449683968,
+    "source": "software_simulator",
+    "event_type": "RECOVERY",
+    "severity": "INFO",
+    "experiment_id": "EXP-C-INTERRUPT-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "recovered_stage": "STAGE_ATTESTATION_CHECK",
+      "recovery_verified": true,
+      "iteration": 20,
+      "simulation": true
+    },
+    "verification_status": "PASSED",
+    "response": "RECOVERED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "bf8a1053-7667-45ab-bea2-47d887329c28",
+    "timestamp_ns": 1795545573449812992,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_00",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000000",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "dd1e2b1e-900b-46c0-b97f-fe3ae11d9eda",
+    "timestamp_ns": 1795545573449831936,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_01",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000011",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "85698c64-07b8-4ba2-8623-0053905ac32c",
+    "timestamp_ns": 1795545573449842944,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_02",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000022",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "32fdee6f-664b-403a-87c4-1b6ef4317ab8",
+    "timestamp_ns": 1795545573449851136,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_03",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000033",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "bc7a3d32-2436-4876-b9a8-3796ed6edca0",
+    "timestamp_ns": 1795545573449858048,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_04",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000044",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "bc44fe43-a8fc-4b1d-8456-db31dd59c863",
+    "timestamp_ns": 1795545573449865216,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_05",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000055",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "92451f11-7aeb-4494-bd6b-374b6bb4d132",
+    "timestamp_ns": 1795545573449871104,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_06",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000066",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "49601995-3457-4296-8526-7bae1bf32c31",
+    "timestamp_ns": 1795545573449881088,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_07",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000077",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "cf2fc616-1adb-47d2-8eb7-00b7e1848eb0",
+    "timestamp_ns": 1795545573449889792,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_08",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000088",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d777d2f7-38a5-48f3-86d3-6d927377e495",
+    "timestamp_ns": 1795545573449896960,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_09",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000099",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "0c68229f-5b9f-4664-9d61-10fdd7206061",
+    "timestamp_ns": 1795545573449903872,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_10",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000AA",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "379098b1-4e58-423e-abce-25a45093f49a",
+    "timestamp_ns": 1795545573449915904,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_11",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000BB",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "df0906be-97c0-424c-954e-9ccccd2ada89",
+    "timestamp_ns": 1795545573449923072,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_12",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000CC",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "ed373686-fa67-436b-ac45-19e8ad9d738b",
+    "timestamp_ns": 1795545573449929984,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_13",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000DD",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "52658680-0e1e-4728-ad9f-f0c247d055be",
+    "timestamp_ns": 1795545573449935872,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_14",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000EE",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "7217731c-17dd-4fb3-835d-1c5e6ebca8e5",
+    "timestamp_ns": 1795545573449944064,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_15",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x000000FF",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "89dc5324-771f-45b8-8525-cb35b1b5b760",
+    "timestamp_ns": 1795545573449950976,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_16",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000110",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b2c2ad7b-c50a-4a4c-9a80-fe1002877db5",
+    "timestamp_ns": 1795545573449959936,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_17",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000121",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "efef6270-2cb2-4e4b-a0ad-8bd3ec22952e",
+    "timestamp_ns": 1795545573449970944,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_18",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000132",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "d4633c3c-7cb2-486c-8b41-95fb348cee71",
+    "timestamp_ns": 1795545573449979136,
+    "source": "software_simulator",
+    "event_type": "INTEGRITY_FAILURE",
+    "severity": "MEDIUM",
+    "experiment_id": "EXP-D-CORRUPT-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "buffer_id": "PAGE_FRAME_19",
+      "expected_crc": "0xABCDEF01",
+      "observed_crc": "0x00000143",
+      "corrupted_bytes_count": 4,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "c880ee47-6892-43af-ba87-bfaf8f07701c",
+    "timestamp_ns": 1795545573450122240,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-001",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 1,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b06a08b5-06d1-4783-b931-474d28e9adeb",
+    "timestamp_ns": 1795545573450139136,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-002",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 2,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "5de863fa-bd0a-44c4-ab5b-c44eb8cb9926",
+    "timestamp_ns": 1795545573450148096,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-003",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 3,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b4413b60-cbf5-4743-bff8-62954f69577e",
+    "timestamp_ns": 1795545573450159104,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-004",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 4,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a4caef1c-b4b7-472a-b489-88b8b378cf87",
+    "timestamp_ns": 1795545573450167040,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "CRITICAL",
+    "experiment_id": "EXP-E-REPEATED-005",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 5,
+      "escalated_to_lockdown": true,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "LOCKDOWN"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "e2ef52a5-1a1d-49c4-931c-e8125094cc50",
+    "timestamp_ns": 1795545573450174208,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-006",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 1,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "503163a9-9bec-4e9a-8117-347c5b2dd3f7",
+    "timestamp_ns": 1795545573450181888,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-007",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 2,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "b1360c09-8812-4823-aec3-dc65510715a4",
+    "timestamp_ns": 1795545573450189056,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-008",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 3,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "98f8b48c-4ccf-4c2c-a1a3-64a5d674a4c7",
+    "timestamp_ns": 1795545573450196992,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-009",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 4,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "215f80e9-c9f7-450f-a7d9-9009738e982e",
+    "timestamp_ns": 1795545573450205184,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "CRITICAL",
+    "experiment_id": "EXP-E-REPEATED-010",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 5,
+      "escalated_to_lockdown": true,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "LOCKDOWN"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "2f85096f-b895-4294-ae75-fb7161975146",
+    "timestamp_ns": 1795545573450212096,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-011",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 1,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "a04926bd-56a1-40cd-aabd-73f28a8091dc",
+    "timestamp_ns": 1795545573450221056,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-012",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 2,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "78d13a91-4a3a-4d0c-bfe9-974c4e98e6a8",
+    "timestamp_ns": 1795545573450226944,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-013",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 3,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "8e32adec-7aaf-47fa-a508-6378b22d264a",
+    "timestamp_ns": 1795545573450234880,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-014",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 4,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "88a8cae3-acbb-4961-828a-a8f4c3c8ef4e",
+    "timestamp_ns": 1795545573450241024,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "CRITICAL",
+    "experiment_id": "EXP-E-REPEATED-015",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 5,
+      "escalated_to_lockdown": true,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "LOCKDOWN"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "3eb53a06-bacb-4bc7-8775-25614292b4b1",
+    "timestamp_ns": 1795545573450247936,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-016",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 1,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f29afd4f-e3f2-46af-b565-598ef17193cb",
+    "timestamp_ns": 1795545573450254848,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-017",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 2,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "61e9a59c-e5b6-43e1-bc0d-5b27a5402370",
+    "timestamp_ns": 1795545573450260992,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-018",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 3,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "f9857745-2662-4f37-870c-dc78b51fd8a2",
+    "timestamp_ns": 1795545573450268928,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "HIGH",
+    "experiment_id": "EXP-E-REPEATED-019",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 4,
+      "escalated_to_lockdown": false,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "QUARANTINED"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "01f0c4e2-039d-430c-9384-f3ab655761e7",
+    "timestamp_ns": 1795545573450275840,
+    "source": "software_simulator",
+    "event_type": "ANOMALY",
+    "severity": "CRITICAL",
+    "experiment_id": "EXP-E-REPEATED-020",
+    "device_session_id": "EXP-RUN-1795545573",
+    "evidence": {
+      "consecutive_failures": 5,
+      "escalated_to_lockdown": true,
+      "threshold": 5,
+      "simulation": true
+    },
+    "verification_status": "FAILED",
+    "response": "LOCKDOWN"
+  }
+]

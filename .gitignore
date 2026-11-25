@@ -38,9 +38,9 @@ dist/
 *.map
 *.lst
 
-# Experiment results (committed selectively)
+# Experiment results (baseline data shipped with Docker build)
 experiments/results/*.csv
-experiments/results/*.json
+!experiments/results/all_experiments.json
 !experiments/results/.gitkeep
 
 # Secrets

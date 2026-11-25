@@ -7,6 +7,30 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [1.0.1] - 2026-11-25 (Phase 9 Deployment: Railway Cloud Production)
+
+### Added
+- **Railway Cloud Deployment:**
+  - Project: `glitchguard-platform` (ID: `5e1dc719-e1e9-48f5-8cfe-6465e3653d71`)
+  - Service: `GlitchGuard` (ID: `0e1d4316-dc17-4ce6-9ba4-ae86f63caecf`)
+  - Public URL: https://glitchguard-production.up.railway.app
+  - Multi-stage Dockerfile: Node 20 builds React, Python 3.11-slim runs FastAPI
+  - Environment variables: `FRONTEND_DIST_DIR`, `HOST`, `PYTHONPATH`
+  - Restart policy: `ON_FAILURE` (max 10 retries)
+  - GitHub source: `sarangchaudhari635-oss/GlitchGuard@main`
+
+### Changed
+- **Start script (`scripts/start-glitchguard.ps1`):** Removed Vite dev server launch from production start (backend at `:8000` now serves compiled SPA); dev mode instructions noted inline.
+
+### Hardware Verification (Phase 9 — Confirmed on Physical Silicon)
+- **11 real hardware events** received from physical Baochip-1x A0 on COM10
+- **12 real heartbeats** from device (mean interval: 21.7s)
+- Real bootloader console messages captured: "Boot1 anti-rollback OK", "CM7 & debug confirmed fused off", "Collateral erased", "Boot1 receipts OK"
+- **150 total events** in SQLite (120 seeded baseline + 30 hardware-sourced)
+- Connection state: `DEGRADED` (board in bootloader mode, handshake succeeded earlier)
+
+---
+
 ## [1.0.0] - 2026-11-25 (Phase 9: Live Hardware Integration & Validation)
 
 ### Added
