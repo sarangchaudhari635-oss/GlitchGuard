@@ -1,4 +1,4 @@
-# GLITCHGUARD Unified Start Script (Windows PowerShell)
+﻿# GLITCHGUARD Unified Start Script (Windows PowerShell)
 Write-Host "==========================================================" -ForegroundColor Cyan
 Write-Host "       GLITCHGUARD: Open-Silicon Security Framework       " -ForegroundColor White
 Write-Host "==========================================================" -ForegroundColor Cyan
@@ -18,23 +18,25 @@ Write-Host "[2/3] Starting FastAPI Telemetry Backend (Port 8000)..." -Foreground
 $BackendJob = Start-Process -FilePath "python" -ArgumentList "-m uvicorn backend.main:app --host 127.0.0.1 --port 8000" -WorkingDirectory $BackendDir -PassThru -WindowStyle Hidden
 Write-Host "FastAPI Backend started with PID: $($BackendJob.Id)" -ForegroundColor Green
 
-# 3. Start React Dashboard
-Write-Host "[3/3] Starting React Dashboard (Port 5173)..." -ForegroundColor Yellow
-$DashboardJob = Start-Process -FilePath "npm" -ArgumentList "run dev -- --host 127.0.0.1" -WorkingDirectory $DashboardDir -PassThru -WindowStyle Hidden
-Write-Host "Dashboard Dev Server started with PID: $($DashboardJob.Id)" -ForegroundColor Green
+# 3. Production dashboard served from backend — no separate Vite dev server needed
+#    Optionally start Vite dev server for active frontend development:
+#    npm run dev -- --host 127.0.0.1 (from dashboard/ directory)
+Write-Host "[3/3] Production dashboard served by FastAPI backend at port 8000." -ForegroundColor Green
+Write-Host "      (Run 'npm run dev' in dashboard/ for hot-reload dev mode on :5173)" -ForegroundColor Gray
 
 # Save PIDs for stop script
 $PidFile = Join-Path $RootDir ".glitchguard_pids.json"
 @{
     backend_pid = $BackendJob.Id
-    dashboard_pid = $DashboardJob.Id
+    dashboard_pid = $null
     started_at = (Get-Date).ToString("o")
 } | ConvertTo-Json | Set-Content -Path $PidFile
 
 Write-Host "==========================================================" -ForegroundColor Cyan
 Write-Host "GLITCHGUARD is running!" -ForegroundColor Green
 Write-Host "  API Backend:    http://127.0.0.1:8000" -ForegroundColor White
+Write-Host "  Live Dashboard: http://127.0.0.1:8000/" -ForegroundColor White
 Write-Host "  Swagger Docs:   http://127.0.0.1:8000/docs" -ForegroundColor White
-Write-Host "  Live Dashboard: http://127.0.0.1:5173" -ForegroundColor White
+Write-Host "  API Events:     http://127.0.0.1:8000/api/events" -ForegroundColor White
 Write-Host "To terminate, execute: .\scripts\stop-glitchguard.ps1" -ForegroundColor Yellow
 Write-Host "==========================================================" -ForegroundColor Cyan
