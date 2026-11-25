@@ -17,6 +17,8 @@ from typing import Any, Dict, List, Optional, Set
 
 from fastapi import FastAPI, HTTPException, Query, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 import uvicorn
 
@@ -468,5 +470,46 @@ async def websocket_telemetry_endpoint(websocket: WebSocket):
         await ws_manager.disconnect(websocket)
 
 
+# Mount static frontend for unified web deployment if dist directory exists
+ROOT_DIR = os.path.dirname(HOST_TOOLS_DIR)
+FRONTEND_DIST = os.environ.get(
+    "FRONTEND_DIST_DIR",
+    os.path.join(ROOT_DIR, "dashboard", "dist"),
+)
+
+if os.path.isdir(FRONTEND_DIST):
+    assets_dir = os.path.join(FRONTEND_DIST, "assets")
+    if os.path.isdir(assets_dir):
+        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+
+    @app.get("/")
+    def serve_frontend_root():
+        """Serves compiled React frontend index.html."""
+        index_file = os.path.join(FRONTEND_DIST, "index.html")
+        if os.path.isfile(index_file):
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="Frontend index.html not found")
+
+    @app.get("/{full_path:path}")
+    def serve_frontend_spa(full_path: str):
+        """Serves compiled React frontend for SPA routing."""
+        if (
+            full_path.startswith("api")
+            or full_path.startswith("ws")
+            or full_path.startswith("docs")
+            or full_path.startswith("openapi.json")
+        ):
+            raise HTTPException(status_code=404, detail="Not Found")
+        target_file = os.path.join(FRONTEND_DIST, full_path)
+        if full_path and os.path.isfile(target_file):
+            return FileResponse(target_file)
+        index_file = os.path.join(FRONTEND_DIST, "index.html")
+        if os.path.isfile(index_file):
+            return FileResponse(index_file)
+        raise HTTPException(status_code=404, detail="Frontend index.html not found")
+
+
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "0.0.0.0")
+    uvicorn.run(app, host=host, port=port)
