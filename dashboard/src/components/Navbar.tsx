@@ -7,21 +7,27 @@ import {
   BarChart3, 
   FileText, 
   Settings,
-  Circle
+  Circle,
+  Wifi,
+  WifiOff
 } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: string;
   onSelectPage: (page: string) => void;
   hardwareConnected: boolean;
+  connectionState?: string;
   port: string | null;
+  wsConnected?: boolean;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   currentPage,
   onSelectPage,
   hardwareConnected,
+  connectionState = 'DISCONNECTED',
   port,
+  wsConnected = false,
 }) => {
   const navItems = [
     { id: 'overview', label: 'Overview', icon: ShieldAlert },
@@ -32,6 +38,9 @@ export const Navbar: React.FC<NavbarProps> = ({
     { id: 'reports', label: 'Research Reports', icon: FileText },
     { id: 'config', label: 'Device Configuration', icon: Settings },
   ];
+
+  const isLiveSilicon = hardwareConnected && connectionState === 'CONNECTED';
+  const isDiscovering = connectionState === 'CONNECTING' || connectionState === 'DISCOVERING' || connectionState === 'HANDSHAKING';
 
   return (
     <header className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
@@ -68,11 +77,43 @@ export const Navbar: React.FC<NavbarProps> = ({
             })}
           </nav>
 
-          <div className="flex items-center space-x-2 bg-slate-950/80 px-3 py-1.5 rounded-full border border-slate-800">
-            <Circle className={`w-2.5 h-2.5 fill-current ${hardwareConnected ? 'text-emerald-400 animate-pulse' : 'text-slate-600'}`} />
-            <span className="text-[11px] font-mono text-slate-300">
-              {hardwareConnected ? `SILICON: ${port || 'CONNECTED'}` : 'DISCONNECTED'}
-            </span>
+          <div className="flex items-center space-x-2.5">
+            {/* WebSocket Stream Indicator */}
+            <div className="flex items-center space-x-1 text-[10px] font-mono px-2 py-1 rounded bg-slate-950/60 border border-slate-800">
+              {wsConnected ? (
+                <>
+                  <Wifi className="w-3 h-3 text-cyan-400" />
+                  <span className="text-cyan-300">LIVE STREAM</span>
+                </>
+              ) : (
+                <>
+                  <WifiOff className="w-3 h-3 text-amber-500" />
+                  <span className="text-amber-400">POLLING</span>
+                </>
+              )}
+            </div>
+
+            {/* Hardware Status Pill */}
+            <div className="flex items-center space-x-2 bg-slate-950 px-3 py-1.5 rounded-full border border-slate-800">
+              <Circle
+                className={`w-2.5 h-2.5 fill-current ${
+                  isLiveSilicon
+                    ? 'text-emerald-400 animate-pulse'
+                    : isDiscovering
+                    ? 'text-amber-400 animate-ping'
+                    : 'text-cyan-500'
+                }`}
+              />
+              <span className="text-[11px] font-mono font-semibold">
+                {isLiveSilicon ? (
+                  <span className="text-emerald-300">SILICON: {port || 'CONNECTED'}</span>
+                ) : isDiscovering ? (
+                  <span className="text-amber-300">{connectionState}...</span>
+                ) : (
+                  <span className="text-cyan-400">SIMULATION MODE</span>
+                )}
+              </span>
+            </div>
           </div>
         </div>
       </div>

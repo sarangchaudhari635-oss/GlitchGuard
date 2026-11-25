@@ -48,6 +48,13 @@ experiments/results/*.json
 *.key
 *.secret
 .env.*
+
+# Local SQLite databases & PID files
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.glitchguard_pids.json
 !.env.example
 
 # OS

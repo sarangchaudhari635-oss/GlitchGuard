@@ -7,52 +7,56 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
-## [Unreleased]
+## [1.0.0] - 2026-11-25 (Phase 9: Live Hardware Integration & Validation)
 
-### Added — 2026-11-24 (Session 1 — Repository Bootstrap)
+### Added
+- **Dynamic Device Discovery Service (`host-tools/serial_comms/device_discovery.py`):**
+  - Scans system serial interfaces using USB VID `0x1D50`.
+  - Automatically discriminates Bootloader mode (`PID 0x6196` on `COM10`) from Xous Runtime mode (`PID 0x6197` on `COM9`).
+- **Serial Connection Manager (`host-tools/serial_comms/connection_manager.py`):**
+  - Implemented 8-state connection lifecycle FSM (`DISCONNECTED` through `CONNECTED` and `DEGRADED`).
+  - Thread-safe serialization preventing Win32 overlapped IO ctypes collisions.
+  - Background ingestion reader and non-destructive handshake routine.
+  - Command allowlist strictly blocking prohibited commands (`LOCKDOWN`, `ZEROIZE`, `BLOW_FUSES`, etc.).
+- **Live Wire Telemetry Framing (`host-tools/parsers/protocol_framing.py`):**
+  - Bidirectional line-delimited JSON wire protocol with CRC32 integrity enforcement.
+  - Telemetry parser with explicit validation of protocol versions, sequence numbers, and schemas.
+- **SQLite Database Persistence (`host-tools/storage/database.py`):**
+  - Thread-safe WAL-mode SQLite database for sessions, glitch events, connection diagnostics, and metrics.
+  - Auto-seeding of baseline experiment data from `all_experiments.json`.
+- **FastAPI Telemetry Backend (`host-tools/backend/main.py`):**
+  - WebSocket streaming endpoint `/ws/telemetry` broadcasting live events, heartbeats, and initial snapshots.
+  - Full REST endpoints: `/api/status`, `/api/device/info`, `/api/device/capabilities`, `/api/device/connection`, `/api/events`, `/api/metrics`, `/api/device/ping`, `/api/device/request-status`, `/api/device/request-capabilities`, `/api/reports/latest`.
+- **React 19 Dashboard Live Integration:**
+  - WebSocket custom hook `useTelemetryWebSocket.ts` with automatic reconnection and exponential backoff.
+  - Real-time connection badge in `Navbar.tsx` (`SILICON LIVE` / `SIMULATION MODE`).
+  - Live heartbeat telemetry diagnostics and physical silicon security context in `Overview.tsx`.
+  - Direct physical silicon command interrogation console in `DeviceConfiguration.tsx`.
+  - Production Vite bundle compiled (`dashboard/dist/`).
+- **End-to-End Operational Validation Suite (`tests/e2e/test_end_to_end.py`):**
+  - 10 automated integration scenarios (A through J) testing discovery, heartbeats, guardrails, fault pipeline, disconnections, persistence, websockets, malformed input rejection, and throughput.
+  - 10/10 scenarios passed with 100% success rate.
+- **Sustained Soak Test Runner (`tests/e2e/sustained_soak_test.py`):**
+  - Verified 200 consecutive messages at 20 Hz with 0.250 ms jitter, 0 invalid frames, and 0 memory leaks.
+- **Unified Launcher Scripts:**
+  - `scripts/start-glitchguard.ps1` & `scripts/stop-glitchguard.ps1` (PowerShell).
+  - `scripts/start-glitchguard.sh` & `scripts/stop-glitchguard.sh` (Bash).
+- **Comprehensive Documentation Suite (`docs/`):**
+  - `docs/testing/phase-9-test-results.md`
+  - `docs/testing/hardware-in-the-loop-report.md`
+  - `docs/testing/real-time-performance-report.md`
+  - `docs/testing/connection-reliability-report.md`
+  - `docs/testing/30-minute-sustained-test.md`
+  - `docs/hardware/live-hardware-capability-report.md`
+  - `docs/deployment/local-operation-guide.md`
+  - `docs/troubleshooting/hardware-connection.md`
+  - `docs/troubleshooting/telemetry-errors.md`
 
-#### Repository Infrastructure
-- Initial repository structure (36 directories)
-- `README.md` with project overview and architecture diagram
-- `CONTRIBUTING.md` with branch strategy and code standards
-- `SECURITY.md` with responsible disclosure policy
-- `LICENSE` (MIT)
-- `.gitignore` for Rust, Python, Node, and embedded artifacts
-- `Cargo.toml` workspace manifest
-- `pyproject.toml` for host-tools
-
-#### Documentation
-- `docs/hardware/initial-device-inventory.md` — hardware inspection template
-- `docs/hardware/hardware-capability-matrix.md` — capability status registry
-- `docs/protocol/event-schema.md` — structured event JSON schema v1
-- `docs/architecture/system-architecture.md` — full system design
-- `research/threat-model.md` — threat model and attack surface
-
-#### Firmware Scaffolds (Rust/Xous)
-- `firmware/glitchguard-monitor/` — main monitoring service scaffold
-- `firmware/hardware-observer/` — hardware sensor interface scaffold
-- `firmware/event-engine/` — event processing scaffold
-- `firmware/crypto-verification/` — cryptographic verification scaffold
-- `firmware/recovery-engine/` — defensive FSM scaffold
-- `firmware/common/` — shared types and event schema
-
-#### Host Tools (Python)
-- `host-tools/backend/main.py` — FastAPI server scaffold
-- `host-tools/serial/connector.py` — serial communication layer
-- `host-tools/parsers/event_parser.py` — event schema parser
-
-#### Experiments
-- `experiments/software-faults/simulator.py` — Python fault simulator framework
-
-#### Project Tracking
-- `PROJECT-STATUS.md` — phase and task tracking
-- `CHANGELOG.md` — this file
-- `docs/DEVELOPMENT-LOG.md` — development decision log
+### Changed
+- Reorganized `host-tools/serial/` to `host-tools/serial_comms/` to prevent shadowing Python's standard `pyserial` package.
+- Updated `CapabilityRegistry` to mark physically observed capabilities (`clock_skipping`, `attack_counter`, `keystore`, `mmu_sv32`, `trng`, `watchdog`, `reset_source`) as `AVAILABLE`, and unverified RTL mapping features as `NOT_VERIFIED`.
 
 ---
 
-## Notes
-
-- **Hardware verification status:** No hardware operations performed this session. Board not currently connected.
-- **Flashing:** No firmware has been flashed. All firmware files are scaffold-only.
-- **Simulations:** No simulations have been run yet.
+## [0.1.0] - 2026-11-25 (Phases 0-8 Baseline)
+- Initial firmware crates, software fault simulation framework, and baseline FastAPI/React components.
